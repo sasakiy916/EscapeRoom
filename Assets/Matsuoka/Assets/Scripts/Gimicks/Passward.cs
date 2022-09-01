@@ -16,15 +16,15 @@ public class Passward : MonoBehaviour
         }
     }
 
-    bool IsClear()
+    public bool IsClear()
     {
-        if (passwardButtons[0].number == correctNumbers[0] &&
-            passwardButtons[1].number == correctNumbers[1] &&
-            passwardButtons[2].number == correctNumbers[2] &&
-            passwardButtons[3].number == correctNumbers[3])
+        for(int i = 0; i<passwardButtons.Length;i++)
         {
-            return true;
+            if(passwardButtons[i].number!=correctNumbers[i])
+            {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
 }
