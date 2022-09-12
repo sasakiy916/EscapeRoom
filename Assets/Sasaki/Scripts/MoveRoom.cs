@@ -41,11 +41,13 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
                     doorLight.enabled = true;
                     doorSphere.material = lightOn;
                     door.canOpen = true;
+                    return;
             }else{
                     Debug.Log("まだ開かないンゴ");
                     doorLight.enabled = false;
                     doorSphere.material = lightOff;
                     door.canOpen = false;
+                    return;
             }
             if(PlayerPrefs.GetInt(clearCheckKey.ToString()) == 1){
                 doorLight.enabled = true;
