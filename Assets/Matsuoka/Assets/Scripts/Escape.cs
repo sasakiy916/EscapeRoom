@@ -8,6 +8,7 @@ public class Escape : MonoBehaviour
     [SerializeField] ClearKeys clearKeys;
     public void OnclickEscape()
     {
+        //set
         PlayerPrefs.SetInt("Matsuoka", 1);
         Debug.Log("Main" + PlayerPrefs.GetInt("Matsuoka"));
         SceneManager.LoadScene("CentralRoom");
