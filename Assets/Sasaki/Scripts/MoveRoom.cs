@@ -18,7 +18,8 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
         Matsuoka,
         Nagatsu,
         Nagano,
-        Sasaki
+        Sasaki,
+        GameClear
     }
     [SerializeField]MovedRoom nextRoom;
     [SerializeField]Board door;
@@ -30,6 +31,22 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
     void Start()
     {
         if(door != null && doorLight !=null && doorSphere != null){
+            if(
+                PlayerPrefs.GetInt("Nagano") == 1 &&
+                PlayerPrefs.GetInt("Nagatsu") == 1 &&
+                PlayerPrefs.GetInt("Sasaki") == 1 &&
+                PlayerPrefs.GetInt("Matsuoka") == 1
+                ){
+                    Debug.Log("クリアしたよーーーーｊ");
+                    doorLight.enabled = true;
+                    doorSphere.material = lightOn;
+                    door.canOpen = true;
+            }else{
+                    Debug.Log("まだ開かないンゴ");
+                    doorLight.enabled = false;
+                    doorSphere.material = lightOff;
+                    door.canOpen = false;
+            }
             if(PlayerPrefs.GetInt(clearCheckKey.ToString()) == 1){
                 doorLight.enabled = true;
                 doorSphere.material = lightOn;
