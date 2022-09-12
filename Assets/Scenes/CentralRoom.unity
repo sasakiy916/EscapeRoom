@@ -3345,7 +3345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f33d634868177c46807f6c255d42771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: 0
+  nextRoom: 2
   door: {fileID: 1836657710}
   doorLight: {fileID: 2057006011}
   doorSphere: {fileID: 2057006012}

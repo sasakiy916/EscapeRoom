@@ -9,7 +9,7 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
     enum MovedRoom{
         NorthRoom,
         SouthRoom,
-        EastRoom,
+        Main,
         WestRoom,
         CentralRoom,
         GameClear
