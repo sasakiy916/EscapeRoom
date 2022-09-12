@@ -9,7 +9,7 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
     enum MovedRoom{
         NorthRoom,
         SouthRoom,
-        EastRoom,
+        Main,
         WestRoom,
         CentralRoom,
         GameClear
@@ -18,14 +18,15 @@ public class MoveRoom : MonoBehaviour,IPointerClickHandler
         Matsuoka,
         Nagatsu,
         Nagano,
-        Sasaki
+        Sasaki,
+        GameClear
     }
     [SerializeField]MovedRoom nextRoom;
-    [SerializeField]Board door;
-    [SerializeField]Light doorLight;
-    [SerializeField]MeshRenderer doorSphere;
-    [SerializeField]Material lightOff;
-    [SerializeField]Material lightOn;
+    [SerializeField]protected Board door;
+    [SerializeField]protected Light doorLight;
+    [SerializeField]protected MeshRenderer doorSphere;
+    [SerializeField]protected Material lightOff;
+    [SerializeField]protected Material lightOn;
     [SerializeField]ClearCheckName clearCheckKey;
     void Start()
     {
