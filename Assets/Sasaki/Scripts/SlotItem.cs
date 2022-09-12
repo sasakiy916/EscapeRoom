@@ -9,6 +9,7 @@ public class SlotItem : MonoBehaviour, IPointerClickHandler
     public bool isSelect;
     Image image;
     new public string name;
+    public ItemSlot item;
     void Start()
     {
         image = GetComponent<Image>();
@@ -30,6 +31,11 @@ public class SlotItem : MonoBehaviour, IPointerClickHandler
             image.color = new Color(1f, 1f, 1f, 1f);
             ItemSlots.instance.selectItem = this;
             Debug.Log("アイテム選択");
+        }
+        else
+        {
+            if (item.type == ItemSlot.TYPE.HINT) item.ClickEffect(eventData.pointerClick.gameObject);
+            if (item.type == ItemSlot.TYPE.KEY) item.ClickEffect();
         }
     }
     public void UseItem()

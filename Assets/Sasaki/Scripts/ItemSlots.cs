@@ -26,13 +26,27 @@ public class ItemSlots : MonoBehaviour
         // list.Add(image.GetComponent<ItemSlot>());
         list.Add(image);
         image.transform.SetParent(this.transform, false);
-        image.AddComponent<SlotItem>();
-        image.GetComponent<SlotItem>().name = item.name;
+        SlotItem slotItem = image.AddComponent<SlotItem>();
+        // image.GetComponent<SlotItem>().name = item.name;
+        slotItem.name = item.name;
+        slotItem.item = item;
         image.GetComponent<Image>().sprite = item.image;
 
         //画像のアルファ値調整
-        Image nantoka = image.GetComponent<Image>();
+        Image alpha = image.GetComponent<Image>();
         // nantoka.color = new Color(1, 1, 1, 0.4f);
-        nantoka.color = new Color32(255, 255, 255, 100);
+        alpha.color = new Color32(255, 255, 255, 100);
+    }
+    public void RemoveItem(string item)
+    {
+        foreach (GameObject i in list)
+        {
+            Debug.Log("List:" + i.GetComponent<SlotItem>().name + "item:" + item);
+            if (i.GetComponent<SlotItem>().name == item)
+            {
+                list.Remove(i);
+                return;
+            }
+        }
     }
 }
