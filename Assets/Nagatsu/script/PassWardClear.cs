@@ -15,6 +15,8 @@ public class PassWardClear : MonoBehaviour
         {
             Debug.Log("kuria-!");
             Destroy(door);
+            PlayerPrefs.SetInt("Nagatsu",1);
+            Debug.Log(PlayerPrefs.GetInt("Nagatsu"));
         }        
     }
 }
