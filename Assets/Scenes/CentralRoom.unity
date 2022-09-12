@@ -6048,10 +6048,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5802070753533090178, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: isNagano
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802070753533090178, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: isSasaki
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802070753533090178, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: isNagatsu
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802070753533090178, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: isMatsuoka
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802070753533090178, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: isDebugDelete
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5802070753533090179, guid: a3b8b8a3153c9da4d85d5b152d885afa,
         type: 3}
       propertyPath: m_Name
       value: DebugDeleteData
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802070753533090179, guid: a3b8b8a3153c9da4d85d5b152d885afa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5802070753533090181, guid: a3b8b8a3153c9da4d85d5b152d885afa,
         type: 3}
