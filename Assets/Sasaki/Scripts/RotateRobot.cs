@@ -9,6 +9,8 @@ public class RotateRobot : MonoBehaviour
     public GameObject hintItem;
     public Transform hintItemStartPos;
     public Transform hintItemEndPos;
+    // [Range(0, 1)] public float t;
+    float time = 0;
     float distance;
     public static RotateRobot instance;
     void Awake()
@@ -32,8 +34,10 @@ public class RotateRobot : MonoBehaviour
         }
         else
         {
-            float t = (Time.time * 1.0f) * distance;
-            hintItem.transform.position = Vector3.Lerp(hintItemStartPos.position, hintItemEndPos.position, t);
+            //特定の謎クリアでヌルっとヒントアイテムが出てくる
+            float t = (time * 1.0f);
+            hintItem.transform.position = Vector3.Lerp(hintItemStartPos.position, hintItemEndPos.position, time);
+            time += Time.deltaTime;
         }
     }
     public void ClearCheck()
