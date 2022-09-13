@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class RotateRobot : MonoBehaviour
 {
+    [Header("回転速度")]
     public float rotSpeed;
-    public bool isClear;
+    [Header("ヒントアイテム")]
     public GameObject hintItem;
     public Transform hintItemStartPos;
     public Transform hintItemEndPos;
-    // [Range(0, 1)] public float t;
+    [Header("デバッグ用表記")]
+    [SerializeField] bool isClear;//クリア判定
+
+    //ヒントアイテムのアニメーション用
     float time = 0;
     float distance;
+
+    //シングルトン化
     public static RotateRobot instance;
     void Awake()
     {
@@ -23,11 +29,13 @@ public class RotateRobot : MonoBehaviour
 
     void Start()
     {
+        //ヒントアイテムの移動開始→終了位置の距離計算
         distance = Vector3.Distance(hintItemStartPos.position, hintItemEndPos.position);
     }
 
     void Update()
     {
+        //謎をクリアするまで回転する(止まる時に正面向いて止まるようにしてる)
         if (!isClear || Mathf.Abs(transform.eulerAngles.y) > 0.1f)
         {
             transform.Rotate(0, rotSpeed, 0);
@@ -40,6 +48,9 @@ public class RotateRobot : MonoBehaviour
             time += Time.deltaTime;
         }
     }
+
+    //関数
+    //クリア判定
     public void ClearCheck()
     {
         isClear = true;
