@@ -17,6 +17,7 @@ public class Passward : MonoBehaviour
         if (IsClear())
         {
             Debug.Log("クリア");
+            SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
             Debug.Log(passwardButtons[0].number);
             Debug.Log(passwardButtons[1].number);
             PasswardAppearItem();

@@ -18,6 +18,7 @@ public class Switch : MonoBehaviour
         if (IsClear())
         {
             Debug.Log("colorOK");
+            SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
             appearItem.SetActive(true);
         }
     }

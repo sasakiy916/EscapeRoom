@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TitleManager : MonoBehaviour
 {
     public string loadScene;//遷移先シーンの名前
+    int count = 1;//連続クリック防止に使用
 
     void Start()
     {
@@ -17,11 +18,13 @@ public class TitleManager : MonoBehaviour
         //デバッグ用の処理
         if (Input.GetKeyDown("a")) SoundManager.instance.PlaySE(SESoundData.SE.ClickStart);
         if (Input.GetKeyDown("b")) SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
+        if (count > 0 && Input.GetMouseButtonDown(0)) MoveScene();
     }
 
     //シーン遷移 関数
     public void MoveScene()
     {
+        count--;
         StartCoroutine(SECoroutine());
     }
 

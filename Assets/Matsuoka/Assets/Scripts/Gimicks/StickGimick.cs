@@ -17,6 +17,7 @@ public class StickGimick : MonoBehaviour
         if (IsClear())
         {
             Debug.Log("OK");
+            SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
             appearItem.SetActive(true);
         }
     }

@@ -23,6 +23,7 @@ public class SampleGimick : MonoBehaviour
         bool clear = ItemBox.instance.TryUseItem(clearItem);
         if (clear == true)
         {
+            SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
             if (appearItem != null) appearItem.SetActive(true);
             if (appearItem2 != null) appearItem2.SetActive(true);
             if (audioSource != null)

@@ -13,11 +13,12 @@ public class ClearDoor : MonoBehaviour
         {
             door1.SetActive(false);
             door2.SetActive(false);
-            GetComponent<BoxCollider>().enabled = false;
+            //GetComponent<BoxCollider>().enabled = false;
         }
     }
     public void Count()
     {
         clearNumber++;
+        if (clearNumber == 3) SoundManager.instance.PlaySE(SESoundData.SE.CORRECT);
     }
 }

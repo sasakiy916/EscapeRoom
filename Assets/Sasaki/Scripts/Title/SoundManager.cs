@@ -42,6 +42,10 @@ public class SoundManager : MonoBehaviour
         bgmAudioSource.volume = data.volume * bgmMasterVolume * masterVolume;//音量設定
         bgmAudioSource.Play();//BGM再生
     }
+    public void StopBGM()
+    {
+        bgmAudioSource.Stop();
+    }
     //SE
     public void PlaySE(SESoundData.SE se)
     {
