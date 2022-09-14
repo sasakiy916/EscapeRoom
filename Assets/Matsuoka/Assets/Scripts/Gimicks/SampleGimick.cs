@@ -9,12 +9,13 @@ public class SampleGimick : MonoBehaviour
     [SerializeField] GameObject appearItem2;
     [SerializeField] GameObject effect;
     AudioSource audioSource;
-    private void Start() {
-        appearItem.SetActive(false);
-        appearItem2.SetActive(false);
-        GetComponent<AudioSource>().enabled=false;
-        effect.SetActive(false);
+    private void Start()
+    {
+        if (appearItem != null) appearItem.SetActive(false);
+        if (appearItem2 != null) appearItem2.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+        if (audioSource != null) GetComponent<AudioSource>().enabled = false;
+        if (effect != null) effect.SetActive(false);
     }
     public void OnClickObj()
     {
@@ -22,11 +23,14 @@ public class SampleGimick : MonoBehaviour
         bool clear = ItemBox.instance.TryUseItem(clearItem);
         if (clear == true)
         {
-            appearItem.SetActive(true);
-            appearItem2.SetActive(true);
-            GetComponent<AudioSource>().enabled=true;
-            audioSource.Play();
-            effect.SetActive(true);
+            if (appearItem != null) appearItem.SetActive(true);
+            if (appearItem2 != null) appearItem2.SetActive(true);
+            if (audioSource != null)
+            {
+                audioSource.enabled = true;
+                audioSource.Play();
+            }
+            if (effect != null) effect.SetActive(true);
         }
     }
 }

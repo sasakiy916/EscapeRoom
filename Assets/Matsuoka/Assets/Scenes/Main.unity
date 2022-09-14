@@ -16093,6 +16093,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 140.6
       objectReference: {fileID: 0}
+    - target: {fileID: 81782550688079304, guid: 42ded4a9b41e76d46bb90a3e35072cf7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 108420560034804212, guid: 42ded4a9b41e76d46bb90a3e35072cf7,
         type: 3}
       propertyPath: m_Range
