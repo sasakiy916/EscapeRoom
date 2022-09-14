@@ -8,9 +8,7 @@ public class NagatsuItemList : MonoBehaviour
     NagatsuItem nagatsuItem;
     void Start()
     {
-        Debug.Log("kite");
         nagatsuItem = NagatsuItemGenerator.instance.Spawn(itemtype);
-        Debug.Log("toutatunagatu");
     }
     public void OnClickObj()
     {

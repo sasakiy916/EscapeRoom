@@ -10,7 +10,7 @@ public class Passward : MonoBehaviour
 
     void Start()
     {
-        appearItem.SetActive(false);
+        if (appearItem != null) appearItem.SetActive(false);
     }
     public void CheckClear()
     {
@@ -30,9 +30,9 @@ public class Passward : MonoBehaviour
 
     public bool IsClear()
     {
-        for(int i = 0; i<passwardButtons.Length;i++)
+        for (int i = 0; i < passwardButtons.Length; i++)
         {
-            if(passwardButtons[i].number!=correctNumbers[i])
+            if (passwardButtons[i].number != correctNumbers[i])
             {
                 return false;
             }
