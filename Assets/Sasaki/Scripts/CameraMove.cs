@@ -24,6 +24,7 @@ public class CameraMove : MonoBehaviour
     void Start()
     {
         preZoomPos = transform.position;
+        zoomOffButton.SetActive(false);
         // preZoomRot = transform.rotation;
     }
 
