@@ -7,9 +7,9 @@ public class MoveCameraOnClickPanel : MonoBehaviour
 {
     [SerializeField] GameObject[] cameras;
     [SerializeField] GameObject[] mainRoomCameras;
-    [SerializeField] GameObject[] room1Cameras;
-    [SerializeField] GameObject[] room2Cameras;
-    [SerializeField] GameObject[] room3Cameras;
+    [SerializeField] Transform[] room1Cameras;
+    [SerializeField] Transform[] room2Cameras;
+    [SerializeField] Transform[] room3Cameras;
     [SerializeField] GameObject backPanel;
     [SerializeField] GameObject rightPanel;
     [SerializeField] GameObject leftPanel;
@@ -35,18 +35,6 @@ public class MoveCameraOnClickPanel : MonoBehaviour
         defaultRotation = cameras[0].transform.rotation;
         startPosition = defaultPosition;
         startRotation = defaultRotation;
-        foreach (GameObject camera in room1Cameras)
-        {
-            camera.SetActive(false);
-        }
-        foreach (GameObject camera in room2Cameras)
-        {
-            camera.SetActive(false);
-        }
-        foreach (GameObject camera in room3Cameras)
-        {
-            camera.SetActive(false);
-        }
         foreach (GameObject camera in cameras)
         {
             camera.SetActive(false);
