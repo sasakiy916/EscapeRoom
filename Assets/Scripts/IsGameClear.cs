@@ -10,7 +10,7 @@ public class IsGameClear : MonoBehaviour
     void Update()
     {
         Debug.Log(PlayerPrefs.GetInt("Matsuoka"));
-        if (PlayerPrefs.GetInt("Matsuoka") == 1)
+        if (PlayerPrefs.GetInt("Nagano") == 1)
         {
             isClears[0] = true;
             Debug.Log("0ok");
@@ -20,17 +20,17 @@ public class IsGameClear : MonoBehaviour
             isClears[1] = true;
             Debug.Log("1ok");
         }
-        if (PlayerPrefs.GetInt("Sasaki") == 1)
+        if (PlayerPrefs.GetInt("Matsuoka") == 1)
         {
             isClears[2] = true;
             Debug.Log("2ok");
         }
-        if (PlayerPrefs.GetInt("Nagano") == 1)
+        if (PlayerPrefs.GetInt("Sasaki") == 1)
         {
             isClears[3] = true;
             Debug.Log("3ok");
         }
-        if(IsEscape())
+        if (IsEscape())
         {
             Debug.Log("Escape");
         }
