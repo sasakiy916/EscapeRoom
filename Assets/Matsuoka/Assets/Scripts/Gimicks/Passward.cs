@@ -26,7 +26,7 @@ public class Passward : MonoBehaviour
 
     public void PasswardAppearItem()
     {
-        appearItem.SetActive(true);
+        if (appearItem != null) appearItem.SetActive(true);
     }
 
     public bool IsClear()

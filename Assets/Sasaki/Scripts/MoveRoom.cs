@@ -56,7 +56,7 @@ public class MoveRoom : MonoBehaviour, IPointerClickHandler
         string roomName = nextRoom.ToString();
         if (roomName != SceneManager.GetActiveScene().name)
         {
-            NowLoadingText.gameObject.SetActive(true);
+            if (NowLoadingText != null) NowLoadingText.gameObject.SetActive(true);
             SceneManager.LoadScene(roomName);
             Debug.Log(roomName);
         }
