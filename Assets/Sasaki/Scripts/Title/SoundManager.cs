@@ -33,6 +33,13 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //デバッグ用表記
+    void Update()
+    {
+        if (Input.GetKeyDown("a")) SoundManager.instance.PlaySE("正解");
+    }
+    //デバッグここまで
+
     //音源再生 関数
     //BGM
     public void PlayBGM(BGMSoundData.BGM bgm)
@@ -50,6 +57,14 @@ public class SoundManager : MonoBehaviour
     public void PlaySE(SESoundData.SE se)
     {
         SESoundData data = seSoundDatas.Find(data => data.se == se);//リストから指定SEを取得
+        seAudioSource.volume = data.volume * seMasterVolume * masterVolume;//音量設定
+        seAudioSource.PlayOneShot(data.audioClip);//SEを一回再生
+    }
+
+    //テスト中(enum型の代わりにstring型でリストから探す)
+    public void PlaySE(string se)
+    {
+        SESoundData data = seSoundDatas.Find(data => data.name == se);//リストから指定SEを取得
         seAudioSource.volume = data.volume * seMasterVolume * masterVolume;//音量設定
         seAudioSource.PlayOneShot(data.audioClip);//SEを一回再生
     }
@@ -77,6 +92,7 @@ public class SESoundData
         CORRECT,
         ClickStart,
     }
+    public string name;
     public SE se;
     public AudioClip audioClip;
     [Range(0, 1)] public float volume = 1.0f;
