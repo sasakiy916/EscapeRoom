@@ -53,14 +53,13 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 2bc61384ba8ea784bb067a80f1cd064a, type: 3}
     volume: 1
   seSoundDatas:
-  - se: 1
+  - name: "\u30AF\u30EA\u30C3\u30AF\u97F3"
+    se: 1
     audioClip: {fileID: 8300000, guid: d284cc10978dfb34595a58d92e92d6cd, type: 3}
     volume: 1
-  - se: 0
+  - name: "\u6B63\u89E3"
+    se: 0
     audioClip: {fileID: 8300000, guid: 776e7124a927de24db37a272503a8a12, type: 3}
-    volume: 1
-  - se: 0
-    audioClip: {fileID: 8300000, guid: d284cc10978dfb34595a58d92e92d6cd, type: 3}
     volume: 1
   masterVolume: 1
   bgmMasterVolume: 1

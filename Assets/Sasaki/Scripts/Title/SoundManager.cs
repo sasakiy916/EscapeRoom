@@ -28,6 +28,7 @@ public class SoundManager : MonoBehaviour
         }
         else
         {
+            if (SoundManager.instance.bgmAudioSource.isPlaying) SoundManager.instance.StopBGM();
             //既に別のサウンドマネージャーが存在する場合は消す
             Destroy(gameObject);
         }

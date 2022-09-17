@@ -1993,20 +1993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 2310239354049743482, guid: 821f900153181654db68ca60a6c3245f,
-        type: 3}
-      propertyPath: seSoundDatas.Array.data[0].name
-      value: "\u30AF\u30EA\u30C3\u30AF\u97F3"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2310239354049743482, guid: 821f900153181654db68ca60a6c3245f,
-        type: 3}
-      propertyPath: seSoundDatas.Array.data[1].name
-      value: "\u6B63\u89E3"
-      objectReference: {fileID: 0}
     - target: {fileID: 2310239354049743483, guid: 821f900153181654db68ca60a6c3245f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2310239354049743483, guid: 821f900153181654db68ca60a6c3245f,
         type: 3}
@@ -2568,50 +2558,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 377371253}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1295612315
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1295612317}
-  - component: {fileID: 1295612316}
-  m_Layer: 0
-  m_Name: BGMStopper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1295612316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295612315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abeb3f77bc3f0a84780ebcc0b013a033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1295612317
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295612315}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1301742798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6438,21 +6384,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b8b8a3153c9da4d85d5b152d885afa, type: 3}
---- !u!1 &5802070753590447706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5802070753533090179, guid: a3b8b8a3153c9da4d85d5b152d885afa,
-    type: 3}
-  m_PrefabInstance: {fileID: 5802070753590447705}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5802070753590447707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5802070753590447706}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abeb3f77bc3f0a84780ebcc0b013a033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
