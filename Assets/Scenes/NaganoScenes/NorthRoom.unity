@@ -1267,7 +1267,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 508.1501
     y: 215.05942
-    width: 116.80416
+    width: 115.75344
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1443,7 +1443,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 372.5675
     y: 183.2652
-    width: 65.67011
+    width: 65.34247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 403.17975
     y: 138.36722
-    width: 70.61857
+    width: 69.726036
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 223.12656
     y: 129.1462
-    width: 115.979416
+    width: 114.657555
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1621,8 +1621,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 70
-    width: 110.206215
+    y: 68.630135
+    width: 109.1781
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1647,11 +1647,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -368.2211, y: -62.73565}
+  scrollPos: {x: -106.91475, y: -9.790231}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 0.96999955
+  zoom: 0.7299998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1659,9 +1659,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 495108044}
-  selectedCommands:
-  - {fileID: 495108042}
+  - {fileID: 495108058}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2591,7 +2590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1317855813
 MonoBehaviour:
   m_ObjectHideFlags: 0
