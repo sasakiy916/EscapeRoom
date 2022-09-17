@@ -11728,7 +11728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 2394094192389331440}
   keySE: {fileID: 8300000, guid: 72f71fc794f303a47913918cd1549a5f, type: 3}
-  openSE: {fileID: 8300000, guid: cebb6ab980dce5041874273c15ec5939, type: 3}
+  openSE: {fileID: 8300000, guid: 776e7124a927de24db37a272503a8a12, type: 3}
 --- !u!82 &2394094192389331449
 AudioSource:
   m_ObjectHideFlags: 0

@@ -964,7 +964,7 @@ MonoBehaviour:
   doorSphere: {fileID: 992994638}
   lightOff: {fileID: 2100000, guid: 9f77f3135d2aa3d478b06e59f0e2c85a, type: 2}
   lightOn: {fileID: 2100000, guid: fb4ba15e2ad42844494919b927b2e6d9, type: 2}
-  clearCheckKey: 2
+  clearCheckKey: 1
   NowLoadingText: {fileID: 0}
 --- !u!1 &346452899
 GameObject:
