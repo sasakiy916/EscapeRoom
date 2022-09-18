@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/CentralRoom.unity
     guid: f05ab0c31b8c6214aa07bfa1baabd676
   - enabled: 1
-    path: Assets/Scenes/NagatsuScenes/SouthRoom.unity
+    path: Assets/Nagatsu/NagatsuScenes/SouthRoom.unity
     guid: 23ce64d860bdb444f809ba7083fb25fd
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/NorthRoom.unity
+    path: Assets/Nagano/NaganoScenes/NorthRoom.unity
     guid: 2658d407c1bfab441845f8cf6cf3cd81
   - enabled: 1
     path: Assets/Scenes/WestRoom.unity
@@ -27,33 +27,33 @@ EditorBuildSettings:
     path: Assets/Scenes/GameClear.unity
     guid: 7969fcf14916e7a46b0efa2ff4f69ab6
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DScroll2.unity
+    path: Assets/Nagano/NaganoScenes/2DScroll2.unity
     guid: 7ef5e7a3a1630cc4cbad92d6d1b6226f
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DScroll.unity
+    path: Assets/Nagano/NaganoScenes/2DScroll.unity
     guid: 6cff41c70d262514ea066af05d7f42bf
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DGameOver.unity
+    path: Assets/Nagano/NaganoScenes/2DGameOver.unity
     guid: f72d42339a2438747b878f03499550c0
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DFungusScroll.unity
+    path: Assets/Nagano/NaganoScenes/2DFungusScroll.unity
     guid: 4c19557b4d4cbc14e970ebfd812044ac
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DFungus4.unity
+    path: Assets/Nagano/NaganoScenes/2DFungus4.unity
     guid: 220ac84709cf9ea4bb68d02d9fc58b71
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DFungus3.unity
+    path: Assets/Nagano/NaganoScenes/2DFungus3.unity
     guid: 24480daf86e43234585e98be77924b6e
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DFungus2.unity
+    path: Assets/Nagano/NaganoScenes/2DFungus2.unity
     guid: c48485145b630e943a7252a46b884b7f
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DFungus.unity
+    path: Assets/Nagano/NaganoScenes/2DFungus.unity
     guid: 8b378e097f468244db67b12c5a1a8b3e
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/2DClear.unity
+    path: Assets/Nagano/NaganoScenes/2DClear.unity
     guid: 4d5e5bc639105c84a86b9de943e3a665
   - enabled: 1
-    path: Assets/Scenes/NaganoScenes/Load.unity
+    path: Assets/Nagano/NaganoScenes/Load.unity
     guid: 75097007f50e678459507892c667ac33
   m_configObjects: {}

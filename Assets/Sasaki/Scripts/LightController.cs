@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightController : ItemSlot
 {
-    [SerializeField] Light RoomLight;
+    [SerializeField] Light[] roomLights;
     [SerializeField] MeshRenderer text;
     [SerializeField] RotateDoorSA door;
     void Update()
@@ -15,6 +15,9 @@ public class LightController : ItemSlot
     {
         audioSource.PlayOneShot(effectSE);
         EyeLightChange.EmissionEye();
-        RoomLight.enabled = !RoomLight.enabled;
+        foreach (Light roomLight in roomLights)
+        {
+            roomLight.enabled = !roomLight.enabled;
+        }
     }
 }
