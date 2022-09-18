@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class MoveCameraOnClickPanel : MonoBehaviour
 {
-    [SerializeField] GameObject[] cameras;
-    [SerializeField] GameObject[] mainRoomCameras;
+    // [SerializeField] GameObject[] cameras;
+    [SerializeField] Transform[] cameras;
+    // [SerializeField] GameObject[] mainRoomCameras;
+    [SerializeField] Transform[] mainRoomCameras;
     [SerializeField] Transform[] room1Cameras;
     [SerializeField] Transform[] room2Cameras;
     [SerializeField] Transform[] room3Cameras;
@@ -35,11 +37,11 @@ public class MoveCameraOnClickPanel : MonoBehaviour
         defaultRotation = cameras[0].transform.rotation;
         startPosition = defaultPosition;
         startRotation = defaultRotation;
-        foreach (GameObject camera in cameras)
-        {
-            camera.SetActive(false);
-        }
-        cameras[0].SetActive(true);
+        // foreach (GameObject camera in cameras)
+        // {
+        //     camera.SetActive(false);
+        // }
+        // cameras[0].SetActive(true);
     }
 
     public void SetZoomCamera(GameObject camera)
