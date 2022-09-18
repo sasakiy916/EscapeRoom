@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // coinTime = 0.0f;
+        // coinTime = 0.0f;
 
     }
 
@@ -18,11 +18,15 @@ public class Coin : MonoBehaviour
     {
         transform.Rotate(new Vector3(0, 0, -90) * Time.deltaTime);
 
-               coinTime += Time.deltaTime;
+        coinTime += Time.deltaTime;
 
         if (coinTime >= 4.0f)
         {
+#if UNITY_WEBGL
+            SceneManager.LoadScene("2DScroll");
+#else
             SceneManager.LoadScene("2DFungusScroll");
+#endif
         }
     }
 }

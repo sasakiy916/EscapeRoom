@@ -14,7 +14,8 @@ public class MoveRoom : MonoBehaviour, IPointerClickHandler
         Main,
         WestRoom,
         CentralRoom,
-        GameClear
+        GameClear,
+        Load
     }
     enum ClearCheckName
     {
@@ -54,6 +55,9 @@ public class MoveRoom : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         string roomName = nextRoom.ToString();
+#if UNITY_WEBGL
+        if (roomName == "NorthRoom") roomName = "Load";
+#endif
         if (roomName != SceneManager.GetActiveScene().name)
         {
             if (NowLoadingText != null) NowLoadingText.gameObject.SetActive(true);
